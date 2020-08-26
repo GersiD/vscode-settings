@@ -1,0 +1,119 @@
+{
+    //Appearance
+    "editor.fontFamily": "'Fira Code Retina','三极行书简体','微软雅黑'",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.mouseWheelZoom": true,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "none",
+    "editor.minimap.enabled": true,
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "comment.block",
+            "comment.block.documentation",
+            "comment.line",
+            "comment.line.double-slash"
+          ],
+          "settings": {
+            "fontStyle": "" /* disable all italic font styles */
+          }
+        }
+      ]
+    },
+    "workbench.colorTheme": "Material Theme Lighter High Contrast",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.activityBar.visible": true,
+    "breadcrumbs.enabled": true,
+    "terminal.integrated.fontFamily": "Consolas",
+    "terminal.integrated.fontSize": 16,
+    "window.menuBarVisibility": "default",
+    "window.zoomLevel": 0.25,
+    "window.title": "${dirty}${activeEditorMedium}${separator}CY's ${appName}",
+  
+    //Suggestions
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  
+    //Format
+    "astyle.executable": "AStyle.exe",
+    "astyle.c.enable": true,
+    "astyle.cpp.enable": true,
+    "astyle.cmd_options": [
+      "--style=linux",
+      "--indent=spaces=4",
+      "--indent-cases",
+      "--indent-preprocessor",
+      "--break-blocks",
+      "--pad-comma",
+      "--pad-oper",
+      "--unpad-paren",
+      "--keep-one-line-statements",
+      "--convert-tabs",
+      "--align-pointer=name",
+      "--align-reference=name",
+      "--suffix=none", //no-backup
+      "--errors-to-stdout",
+      "--preserve-date",
+      "--lineend=linux"
+    ],
+    //astyle for C-Family languages
+    "[c]": {
+      "editor.defaultFormatter": "chiehyu.vscode-astyle"
+    },
+    "[cpp]": {
+      "editor.defaultFormatter": "chiehyu.vscode-astyle"
+    },
+    "[java]": {
+      "editor.defaultFormatter": "chiehyu.vscode-astyle"
+    },
+    "[csharp]": {
+      "editor.defaultFormatter": "chiehyu.vscode-astyle"
+    },
+    //otherwise
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+    //Git
+    "editor.codeLens": false,
+    "git.path": "D:\\Program Files\\Git\\git.exe",
+  
+    //Languages
+    "python.languageServer": "Microsoft",
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "[plaintext]": {
+      "editor.wordBasedSuggestions": false,
+    },
+    "[markdown]": {
+      "editor.wordBasedSuggestions": false,
+    },
+  
+    //Outliner
+    "cobiSymbolOutline.sortBy": "Position",
+    "cobiSymbolOutline.expandableNodes": [
+      "File",
+      "Module",
+      "Namespace",
+      "Package",
+      "Class",
+      "Enum",
+      "Interface",
+      "Object",
+      "Struct",
+      "Field"
+    ],
+  
+    //Messy
+    "update.mode": "manual",
+    "update.showReleaseNotes": false,
+    "vsicons.dontShowNewVersionMessage": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editorAssociations": [
+      {
+        "viewType": "default",
+        "filenamePattern": "*.txt"
+      }
+    ],
+  }
+  
